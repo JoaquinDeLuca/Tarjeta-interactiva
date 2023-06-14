@@ -1,6 +1,7 @@
 interface dataCardOne {
     nameOfOwner: string,
-    cardNumber: number,
-    expirationDate: string,
-    securityCode: number
+    cardNumber: string,
+    expirationDateMonth: string,
+    expirationDateYear: string,
+    securityCode: string
 }
