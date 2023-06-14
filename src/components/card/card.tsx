@@ -25,7 +25,7 @@ export default function card({ data }: Props) {
             <p>{nameOfOwner ? nameOfOwner : "NOMBRE Y APELLIDO"}</p>
           </div>
           <div>
-            <p className='cardText'>Valida</p>
+            <p className='cardText'>Válida</p>
             <p>{
               expirationDateMonth || expirationDateYear 
             ? 
