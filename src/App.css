@@ -4,16 +4,27 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
-  background: url(./assets/Vector.svg);
-  background-repeat: no-repeat;
-  background-position: -1ch -1ch;
+  background: url(./assets/bgmobile.svg) no-repeat center;
   background-size: 100%;
+  background-size: cover;
+  background-color: #fafafa;
 }
-
-@media (width >= 768px) {
+.appLogoMp{
+  display: none;
+  position: absolute;
+}
+@media (min-width: 768px) {
   .appMain{
     flex-direction: row;
     gap: 6rem;
+    background: url(./assets/bgfull.svg) no-repeat;
+    background-size: 100%;
+    background-size: cover;
+  }
+  .appLogoMp{
+    display: block;
+    top: 2rem;
+    right: 2rem;
+    width: 16rem;
   }
 }
