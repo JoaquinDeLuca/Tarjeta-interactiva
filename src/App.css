@@ -13,6 +13,22 @@
   display: none;
   position: absolute;
 }
+.appSocialMedia{
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.appSocialMedia p{
+  color: #475053;
+  font-size: .8rem;
+}
+.appSocialMedia img{
+  margin: .7rem;
+  width: 1.4rem;
+}
+
 @media (min-width: 768px) {
   .appMain{
     flex-direction: row;
