@@ -12,13 +12,13 @@ export default function card({ data }: Props) {
   return (
     <section className='cardSection'>
       <div className='cardBack'>
-        <p><span className='cardText'>CVV </span>{securityCode}</p>
+        <p><span className='cardText'>CVC  </span>{securityCode}</p>
       </div>
       <div className="cardFront">
         <img className='cardMp' src={Mp}  alt='Logo de mercado pago'/>
         <img className='cardSymbolSvg' src={Signo}  alt='Signo peso'/>
         <img className='cardMasterCardSvg' src={MasterCard}  alt='Logo de masterCard'/>
-        <p className='cardNumber'>{cardNumber ? cardNumber : "#### #### #### ####"}</p>
+        <p className='cardNumber'>{cardNumber ? cardNumber : "0000 0000 0000 0000"}</p>
         <div className='cardData'>
           <div>
             <p className='cardText'>Nombre del titular</p>
