@@ -1,7 +1,7 @@
 .cardSection{
     display: flex;
     flex-direction: column;
-    margin: 3rem 0;
+    margin: 2rem 0;
     position: relative;
 }
 .cardFront{
@@ -53,8 +53,8 @@
     right: .5rem;
 }
 .cardBack{
-    position: absolute;
-    top: -6.5rem;
+    position: relative;
+    top: 4.4rem;
     left: 1rem;
     box-shadow: 1rem 1.5rem 3rem 0 rgba(83, 85, 88, 0.857);
     border-radius: .5rem;
@@ -91,4 +91,10 @@
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
+}
+@media (min-width:768px) {
+    .cardSection{
+        justify-content: flex-start;
+        height: 35rem;
+    }
 }
