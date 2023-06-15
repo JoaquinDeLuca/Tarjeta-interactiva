@@ -1,0 +1,83 @@
+.cardSection{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3rem;
+    position: relative;
+}
+.cardFront{
+    border-radius: .5rem;
+    width: 18rem;
+    height: 10.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+    color: rgb(18, 18, 18);
+    background-color: rgb(0,158,227);
+    background: url(../../assets/LinesTwo.svg) no-repeat left,linear-gradient(95deg, rgba(0,158,227,1) 0%, rgba(0,160,227,1) 39%, rgba(68,185,234,1) 55%, rgba(113,201,238,1) 70%, rgba(120,204,239,1) 80%, rgba(126,206,239,1) 87%, rgba(202,234,247,1) 100%, rgba(252,252,252,1) 100%, rgba(131,208,240,1) 100%);
+    z-index: 1;
+    box-shadow: 1rem 1rem 1.5rem 0 rgba(83, 85, 88, 0.598);
+    animation: moveOne alternate 1s linear infinite;
+    overflow: hidden;
+    padding: .2rem;
+}
+@keyframes moveOne {
+    0%{
+        transform: translate(-0%);
+    }
+}
+.cardSymbolSvg{
+    width: 10rem;
+    position: absolute;
+    left: -10% ;
+    top: -21%;
+    z-index: -1;
+}
+.cardMasterCardSvg{
+    width: 2.7rem;
+    position: absolute;
+    right: 4%;
+    top: 47%;
+}
+.cardData{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: .4rem;
+}
+.cardMp{
+    width: 6rem;
+    position: absolute;
+    top: .6rem;
+    right: .5rem;
+}
+.cardBack{
+    position: absolute;
+    top: -6.5rem;
+    left: 1rem;
+    box-shadow: 1rem 1.5rem 3rem 0 rgba(83, 85, 88, 0.857);
+    border-radius: .5rem;
+    width: 18rem;
+    height: 10.5rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: rgb(0,158,227);
+    background: url(../../assets/carBack2.svg) no-repeat left,linear-gradient(95deg, rgba(0,158,227,1) 0%, rgba(0,160,227,1) 39%, rgba(68,185,234,1) 55%, rgba(113,201,238,1) 70%, rgba(120,204,239,1) 80%, rgba(126,206,239,1) 90%, rgba(131,208,240,1) 100%, rgba(252,252,252,1) 100%);
+    background-position: 90% 10%;
+}
+.cardBack > p {
+    background-color: #fbfbfbf0;
+    line-break: normal;
+    color: rgb(18, 18, 18);
+    border-radius: .5rem 0 0 .5rem;
+    padding: .3rem .7rem;
+    margin-bottom: 1rem;
+}
+.cardText{
+    font-size: .9rem;
+}
+.cardNumber{
+    margin-right: .8rem;
+}
