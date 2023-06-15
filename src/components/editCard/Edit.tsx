@@ -3,13 +3,14 @@ import Card from "../card/card";
 import { ChangeEvent, useState, FormEvent } from "react";
 
 export default function Edit() {
-  const [dataCard, setdataCard] = useState<dataCardOne>({
+  const initialState = {
     nameOfOwner: "",
     cardNumber: "",
     expirationDateMonth: "",
     expirationDateYear: "",
     securityCode: "",
-  });
+  }
+  const [dataCard, setdataCard] = useState<dataCardOne>(initialState);
   const [confirm, setConfirm] = useState(false);
 
   const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
@@ -46,8 +47,8 @@ export default function Edit() {
 
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log(e);
 
+    setdataCard(initialState)
     setConfirm(true);
   };
 
@@ -58,7 +59,7 @@ export default function Edit() {
         <form className="editInputs" onSubmit={handleSubmit}>
         <input
           value={dataCard.nameOfOwner}
-          maxLength={25}
+          maxLength={21}
           className="editInput"
           placeholder="Nombre del titular"
           type="text"
@@ -139,7 +140,7 @@ export default function Edit() {
     { confirm && 
         <div className="editThanks">
             <h2>¡Muchas Gracias!</h2>
-            <p>Tus datos fueron confirmados</p>
+            <p>Tus datos fueron confirmados y validados</p>
             <button onClick={() => setConfirm(!confirm)}>Continuar</button>
         </div>
     }
