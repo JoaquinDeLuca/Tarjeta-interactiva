@@ -20,9 +20,9 @@ export default function card({ data }: Props) {
         <img className='cardMasterCardSvg' src={MasterCard}  alt='Logo de masterCard'/>
         <p className='cardNumber'>{cardNumber ? cardNumber : "0000 0000 0000 0000"}</p>
         <div className='cardData'>
-          <div>
+          <div className='cardName'>
             <p className='cardText'>Nombre del titular</p>
-            <p>{nameOfOwner ? nameOfOwner : "NOMBRE Y APELLIDO"}</p>
+            <p className='cardP'>{nameOfOwner ? nameOfOwner : "NOMBRE Y APELLIDO"}</p>
           </div>
           <div>
             <p className='cardText'>Válida</p>
