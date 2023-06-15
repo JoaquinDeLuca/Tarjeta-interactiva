@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   background: url(./assets/bgmobile.svg) no-repeat center;
   background-size: 100%;
   background-size: cover;
@@ -14,12 +14,13 @@
   position: absolute;
 }
 .appSocialMedia{
-  position: absolute;
-  bottom: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: flex-end;
   min-width: 6rem;
+  height: 6rem;
+  margin-top: 1rem;
 }
 .appSocialMediaContainer{
   display: flex;
@@ -36,6 +37,7 @@
 @media (min-width: 768px) {
   .appMain{
     flex-direction: row;
+    justify-content: center;
     gap: 6rem;
     background: url(./assets/bgfull.svg) no-repeat;
     background-size: 100%;
@@ -46,5 +48,9 @@
     top: 2rem;
     right: 2rem;
     width: 16rem;
+  }
+  .appSocialMedia{
+      position: absolute;
+      bottom: 0;
   }
 }
