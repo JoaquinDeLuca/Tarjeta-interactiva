@@ -11,7 +11,7 @@ function App() {
       <img className='appLogoMp' src={MpLogo} alt='logo de mercado pago'/>
       <div className='appSocialMedia'>
         <p>Desarrollado por</p>
-        <div>
+        <div className='appSocialMediaContainer'>
           <a href='https://www.linkedin.com/in/joaquindeluca/' target='_blank'><img src={Linkedin} alt='linkedin'/></a>
           <a href='https://github.com/JoaquinDeLuca' target='_blank'><img src={GitHub} alt='Git Hub'/></a>
         </div>
