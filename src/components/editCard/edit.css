@@ -23,4 +23,18 @@ button{
     border-radius: .5rem;
     color: white;
     cursor: pointer;
+    transition: all .4s ease;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  display: none;
+}
+
+.editThanks{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
 }
