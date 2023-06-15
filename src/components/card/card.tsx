@@ -12,7 +12,7 @@ export default function card({ data }: Props) {
   return (
     <section className='cardSection'>
       <div className='cardBack'>
-        <p><span className='cardText'>CVC </span>{securityCode}</p>
+        <p><span className='cardText'>CVC  </span>{securityCode}</p>
       </div>
       <div className="cardFront">
         <img className='cardMp' src={Mp}  alt='Logo de mercado pago'/>
