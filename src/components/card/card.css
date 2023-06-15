@@ -68,12 +68,14 @@
     background-position: 90% 10%;
 }
 .cardBack > p {
-    background-color: #fbfbfbf0;
+    background-color: #e8e8e8;
     line-break: normal;
     color: rgb(18, 18, 18);
     border-radius: .5rem 0 0 .5rem;
-    padding: .3rem .7rem;
+    padding: .1rem .7rem;
     margin-bottom: 1rem;
+    width: 50%;
+    text-align: end;
 }
 .cardText{
     font-size: .9rem;
