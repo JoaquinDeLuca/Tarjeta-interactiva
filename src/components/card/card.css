@@ -83,3 +83,12 @@
 .cardNumber{
     margin-right: .8rem;
 }
+.cardName{
+    overflow: hidden;
+    width: 13rem;
+}
+.cardP{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
