@@ -1,6 +1,7 @@
 # Tarjeta Interactiva
 
-![TarjetaHome](https://github.com/JoaquinDeLuca/Tarjeta-interactiva/assets/110680187/3852f3b0-cc9a-423a-bcf6-cd6a4de181df)
+![tarjetahome](https://github.com/JoaquinDeLuca/Tarjeta-interactiva/assets/110680187/56f119f8-ce19-4978-85d0-28ddf596931c)
+
 
 ## Link 🔗
 - https://tarjeta-interactiva.vercel.app/
